@@ -1,0 +1,40 @@
+#tongxunlu{
+    width:100%;
+    background-color: #F5F5F5;
+    flex:1;
+    display: flex;
+    position: relative;
+}
+#zimu{
+    width: 5%;
+    /*background-color: #9c27b0;*/
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#tongxunlu_body{
+    width: 95%;
+    overflow-y: scroll;
+}
+
+.zimu_body{
+    width:100%;
+    flex:1;
+    font-size: 10px;
+
+
+}
+a:link {
+    text-decoration: none;
+    color:black;
+}

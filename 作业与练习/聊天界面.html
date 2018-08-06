@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天</title>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container{
+            width:400px;
+            height:850px;
+            /*border:1px solid red;*/
+            border-radius:10px 10px 10px 10px;
+            margin-left:100px;
+        }
+        .header{
+            width:100%;
+            height:50px;
+            /*border:1px solid black;*/
+            background-color:gray;
+            text-align:center;
+            font-size:25px;
+            color:white;
+            line-height:50px;
+            border-radius:10px 10px 0px 0px;
+        }
+        .jiantou{
+            width:40px;
+            height:50px;
+            /*border:1px solid black;*/
+           background-image: url(../img/047-左箭头.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .title{
+            width:310px;
+            height:50px;
+            /*border:1px solid black;*/
+            text-align: left;
+            font-size: 25px;
+            color:white;
+            float:left;
+        }
+        .shenglue{
+
+            width:40px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/省略号.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .sub{
+            width: 400px;
+            /*height:550px;*/
+            /*border:1px solid black;*/
+            background-color: aliceblue;
+            margin: 0 auto;
+        }
+        .neirong1{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang1{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像男孩.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .liaotian1{
+            max-width:73%;
+            background-color:white;
+            /*border:1px solid black;*/
+            font-size: 18px;
+            border-radius:10px 10px 10px 10px;
+            padding-left:10px;
+            padding-right:10px;
+            float:left;
+            margin-top: 15px;
+
+        }
+        .liaotian1:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+        .neirong2{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang2{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .liaotian2 {
+            max-width: 73%;
+            background-color: white;
+            /*border: 1px solid black;*/
+            font-size: 18px;
+            border-radius: 10px 10px 10px 10px;
+            padding-left: 10px;
+            padding-right:10px;
+            float: left;
+            margin-top: 15px;
+        }
+        .liaotian2:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+        .neirong3{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang3{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像女孩.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:right;
+        }
+        .liaotian3 {
+            max-width: 73%;
+            background-color: white;
+            /*border: 1px solid black;*/
+            font-size: 18px;
+            border-radius: 10px 10px 10px 10px;
+            padding-left: 10px;
+            padding-right:10px;
+            float: right;
+            margin-top: 15px;
+        }
+        .liaotian3:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .neirong4{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang4{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像女孩.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:right;
+        }
+        .liaotian4 {
+            max-width: 73%;
+            /*border: 1px solid black;*/
+            font-size: 18px;
+            border-radius: 10px 10px 10px 10px;
+            padding-left: 10px;
+            padding-right:10px;
+            float: right;
+            background-color:lawngreen;
+            margin-top: 15px;
+        }
+        .liaotian4:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+        .neirong5{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang5{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像男孩.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .liaotian5{
+            max-width:73%;
+            background-color:white;
+            /*border:1px solid black;*/
+            font-size: 18px;
+            border-radius:10px 10px 10px 10px;
+            padding-left:10px;
+            padding-right:10px;
+            float:left;
+            margin-top: 15px;
+
+        }
+        .liaotian5:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+        .neirong6{
+            width: 400px;
+            /*border:1px solid black;*/
+        }
+        .touxiang6{
+            width:50px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image:url(../img/头像男孩.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .liaotian6{
+            max-width:73%;
+            background-color:white;
+            /*border:1px solid black;*/
+            font-size: 18px;
+            border-radius:10px 10px 10px 10px;
+            padding-left:10px;
+            padding-right:10px;
+            float:left;
+            margin-top: 15px;
+
+        }
+        .liaotian6:hover{
+            box-shadow: 0px 0px 10px gray;
+        }
+        .beijing{
+            width:400px;
+            height:500px;
+            overflow-y: scroll;
+        }
+        .shuru{
+            width:400px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-color: lightgrey;
+            opacity: 0.5;
+        }
+        .yuyin{
+            width:40px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image: url(../img/语音.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:left;
+        }
+        .jiahao{
+            width:40px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image: url(../img/加号.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:right;
+        }
+        .biaoqing{
+            width:40px;
+            height:50px;
+            /*border:1px solid black;*/
+            background-image: url(../img/表情.svg);
+            background-size:80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            float:right;
+        }
+        .text{
+            width:270px;
+            height:50px;
+            /*border:1px solid black;*/
+            float:left;
+            padding-top:5px;
+        }
+        .jianpan{
+            width:400px;
+            height:250px;
+            /*border:1px solid black;*/
+            background-image:url(../img/键盘.png);
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="jiantou"><a href=""></a></div>
+        <div class="title">大数据交流群(200)</div>
+        <div class="shenglue"></div>
+    </div>
+    <div class="beijing">
+    <div class="sub">
+        <div class="neirong1">
+            <div class="touxiang1"></div>
+            <div class="liaotian1">大家好，我是刚入群的小白，想学习大数据，希望老师还有同学能多多指教。</div>
+            <br clear="both">
+        </div>
+
+        <div class="neirong2">
+            <div class="touxiang2"></div>
+            <div class="liaotian2">的山东江司机地</div>
+            <br clear="both">
+        </div>
+
+        <div class="neirong3">
+            <div class="touxiang3"></div>
+            <div class="liaotian3"><img src="../img/大数据.jpg" style="width:100%; height: 80%"></div>
+            <br clear="both">
+        </div>
+        <div class="neirong4">
+            <div class="touxiang4"></div>
+            <div class="liaotian4">婚后生活生活读书时代和胡顶顶顶顶顶顶不是姑苏事故告诉故事梗概上高速姑姑是个顶顶顶顶顶读书的户数湖和低俗的户</div>
+            <br clear="both">
+        </div>
+        <div class="neirong5">
+            <div class="touxiang5"></div>
+            <div class="liaotian5">婚后生活生活读书时代和胡顶顶顶顶顶顶顶顶顶顶顶读书的户数湖和低俗的户</div>
+            <br clear="both">
+        </div>
+        <div class="neirong6">
+            <div class="touxiang6"></div>
+            <div class="liaotian6">婚后生活生活读书时代和胡顶顶顶顶顶顶顶顶顶顶顶读书的户数湖和低俗的户</div>
+            <br clear="both">
+        </div>
+    </div>
+    </div>
+    <div class="shuru">
+        <div class="yuyin"></div>
+        <div class="text"> <input type="text"   autocomplete="off" style="width:275px;height:30px ;border-radius:10px; text-indent: 10px"></div>
+        <div class="jiahao"></div>
+        <div class="biaoqing"></div>
+    </div>
+    <div class="jianpan"></div>
+</div>
+</body>
+</html>

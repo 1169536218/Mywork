@@ -1,0 +1,105 @@
+#title{
+    width:100%;
+    height: 40px;
+    background-color: #212121;
+    display: flex;
+
+}
+#weixin{
+    width:10%;
+    min-width: 40px;
+    height:40px;
+    color:whitesmoke;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+#weixinzi{
+    width:10%;
+    height:40px;
+    color:whitesmoke;
+    font-size: 20px;
+    margin-left: 5px;
+}
+#tubiao{
+    width:90%;
+    height:40px;
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+}
+#sousuo{
+    width:60px;
+    height:40px;
+    display: flex;
+    justify-content: flex-end;
+    /*border: 1px solid red;*/
+}
+#sousuotu{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border:2px solid whitesmoke;
+    position: relative;
+    margin:30px auto;
+}
+
+#sousuotu:after{
+    content: "";
+    transform: rotate(45deg);
+    width:12px;
+    height: 2px;
+    position: absolute;
+    top:13px;
+    left:11px;
+    background-color: whitesmoke;
+}
+
+#jiahao{
+    width:60px;
+    height:40px;
+    /*border:1px solid white;*/
+    position: relative;
+
+}
+#jiahaokuang{
+    width:24px;
+    height:24px;
+    /*border:1px solid red;*/
+
+}
+
+#zuo{
+    width:9px;
+    height:0px;
+    border:1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-top: 11px;
+    float:left;
+}
+#zhong{
+    width:0px;
+    height:22px;
+    border:1px solid whitesmoke;
+    background-color: whitesmoke;
+    float:left;
+}
+#you{
+    width:9px;
+    height:0px;
+    border:1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-top: 11px;
+    float:left;
+}
+
+#jiahao_menu{
+    display:none;
+    width:150px;
+    height:204px;
+    background-color: #424242;
+    position: absolute;
+    top: 40px;
+    right:15px;
+    z-index: 1;
+}

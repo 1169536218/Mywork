@@ -1,0 +1,269 @@
+#pengyouquan{
+    width:100%;
+    background-color: #F5F5F5;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#chatu{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/img-3.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#chatu_1{
+    width: 100%;
+    height: 200px;
+}
+
+#title_1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color:#212121;
+}
+
+#title_left{
+    height: 40px;
+    flex:1;
+
+}
+#title_left_kuang{
+    width:40px;
+    height: 40px;
+    padding-left: 2%;
+}
+#title_right{
+    height: 40px;
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+#title_right_kuang{
+    width:40px;
+    height: 40px;
+    padding-right: 2%;
+}
+
+
+#wenzhang{
+    flex:1;
+    width:100%;
+    position: relative;
+
+}
+
+#touxiang_1{
+    width:80px;
+    height: 80px;
+    position:absolute;
+    top:-50px;
+    right:20px;
+    border: 1px solid white;
+}
+#name{
+    width:40px;
+    height: 20px;
+    position:absolute;
+    top:-30px;
+    right:110px;
+    color: white;
+
+}
+.wenzhang_body{
+    width:100%;
+    /*background-color: #9c27b0;*/
+    display: flex;
+   border-bottom:1px solid #BDBDBD;;
+}
+
+.wenzhang_body_left{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wenzhang_body_right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-right: 2%;
+
+}
+
+.touxiang_2{
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+.wenzhang_1{
+    width: 100%;
+    height: 25px;
+
+    line-height: 25px;
+    color:#303F9F;
+    padding-left: 2%;
+}
+.wenzhang_2{
+    width: 100%;
+    flex:1;
+    padding-left: 2%;
+}
+.wenzhang_3{
+    width: 100%;
+    height: 30px;
+    display: flex;
+
+}
+.wenzhang_3_left{
+    width: 100%;
+    flex: 1;
+    padding-left: 2%;
+}
+.wenzhang_3_left_kuang{
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    color: gray;
+    line-height: 30px;
+
+}
+#wenzhang_3_right_1{
+    width: 100%;
+    height: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+#wenzhang_3_right_2{
+    width: 100%;
+    height: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+#wenzhang_3_right_3{
+    width: 100%;
+    height: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+
+#wenzhang_3_right_4{
+    width: 100%;
+    height: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+.wenzhang_3_right_kuang{
+    width:20px;
+    height: 20px;
+    padding-top: 2px;
+
+}
+#pinglun_menu_1{
+    display:none;
+    width:140px;
+    height:30px;
+    background-color:#212121;
+    position: absolute;
+    right:35px;
+}
+#pinglun_menu_2{
+    display:none;
+    width:140px;
+    height:30px;
+    background-color:#212121;
+    position: absolute;
+    right:35px;
+}
+#pinglun_menu_3{
+    display:none;
+    width:140px;
+    height:30px;
+    background-color:#212121;
+    position: absolute;
+    right:35px;
+}
+
+#pinglun_menu_4{
+    display:none;
+    width:140px;
+    height:30px;
+    background-color:#212121;
+    position: absolute;
+    right:35px;
+}
+
+
+.pinglun_menu_kuang{
+    width:140px;
+    height:30px;
+    background-color:#212121;
+    right:35px;
+    display: flex;
+}
+.zan{
+    width: 70px;
+    height:30px;
+    display: flex;
+
+}
+.zan_left{
+    width: 25px;
+    height:30px;
+}
+.zan_right{
+    width: 18px;
+    height:30px;
+    font-size: 12px;
+    color: white;
+}
+
+.pinglun_1 {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+
+}
+
+.pinglun_1_left{
+    width: 25px;
+    height:30px;
+}
+.pinglun_1_right{
+    width: 25px;
+    height:30px;
+    font-size: 12px;
+    color:white;
+}
+
+
+
+#kongbai{
+    width:100%;
+    height: 30px;
+}
