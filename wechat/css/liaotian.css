@@ -1,0 +1,58 @@
+#liaotian{
+    width:100%;
+    background-color: #F5F5F5;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#title_2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color:#212121;
+
+}
+
+#fanhui{
+    height: 40px;
+    width:40px;
+}
+
+#fanhui_kuang{
+    height: 40px;
+    width:40px;
+}
+
+#name_liaotian{
+    height:40px;
+    flex:1;
+    color:white;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#gengduo{
+    height:40px;
+    width:40px;
+}
+#gengduo_kuang{
+    height:40px;
+    width:40px;
+}
+
+#liaotian_1{
+    width: 100%;
+    display: flex;
+}
+
+#liaotian_touxiang{
+    width:50px;
+    height: 50px;
+}
+#liaotian_neirong{
+    flex:1;
+}
