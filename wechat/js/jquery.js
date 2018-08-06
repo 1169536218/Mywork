@@ -65,8 +65,6 @@ var support = {};
 
 
 
-
-
 var
 	// Use the correct document accordingly with window argument (sandbox)
 	document = window.document,
